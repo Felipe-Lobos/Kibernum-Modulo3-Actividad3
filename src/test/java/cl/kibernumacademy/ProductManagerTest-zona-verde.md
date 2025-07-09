@@ -1,3 +1,4 @@
+```java
 package cl.kibernumacademy;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -48,12 +49,11 @@ public class ProductManagerTest {
 
         // Comprobar que el listado de productos tenga un tamaño de 1
         assertThat(productManager.getProducts(),hasSize(1));
-        System.out.println("Cantidad de productos: " + productManager.getProducts().size());
     }
 
     @AfterEach
-    void finalProductTestAddProduct() {
-        System.out.println("Cantidad de productos: " + productManager.getProducts().size());
+    void tearDown() {
+
     }
 
     // Pruebas parametrizadas
@@ -84,11 +84,6 @@ public class ProductManagerTest {
         });
     }
 
-    @AfterEach
-    void finalProductTesUpdateProduct() {
-        System.out.println("Cantidad de productos: " + productManager.getProducts().size());
-    }
-
     @Test
     void deleteProductTest(){
         Product product = productManager.addProduct("Computador","Lenovo Yoga pro x",1200000);
@@ -97,11 +92,8 @@ public class ProductManagerTest {
         assertTrue(deleted);        
     }
 
-    @AfterEach
-    void finalProductTestDeleteProduct() {
-        System.out.println("Cantidad de productos: " + productManager.getProducts().size());
-    }
-
     
 
 }
+
+```
