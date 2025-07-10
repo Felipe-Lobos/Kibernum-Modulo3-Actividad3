@@ -8,7 +8,7 @@
 - Eduardo Arellano
 - Carlos Vasquez
 ## Gestor de Productos con JUnit 
-[!CAUTION]
+
 ### RED
 Test en zona roja
 
@@ -27,7 +27,7 @@ Código fuente en zona verde
 ### REFACTOR
 tests
 
-![REFACTOR]()
+![REFACTOR](img/Refactor-test-terminal.png)
 
 código refactorizado
 
